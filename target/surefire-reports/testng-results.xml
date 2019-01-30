@@ -2,90 +2,90 @@
 <testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="174555" started-at="2019-01-22T17:30:24Z" finished-at="2019-01-22T17:33:18Z">
+  <suite name="Suite" duration-ms="171947" started-at="2019-01-30T00:11:04Z" finished-at="2019-01-30T00:13:56Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="174555" started-at="2019-01-22T17:30:24Z" finished-at="2019-01-22T17:33:18Z">
+    <test name="Test1" duration-ms="171947" started-at="2019-01-30T00:11:04Z" finished-at="2019-01-30T00:13:56Z">
       <class name="MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo">
-        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1afd44cb]" name="initConfigs" is-config="true" duration-ms="24946" started-at="2019-01-22T23:01:21Z" finished-at="2019-01-22T23:01:46Z">
+        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1ab3a8c8]" name="initConfigs" is-config="true" duration-ms="24473" started-at="2019-01-30T05:41:59Z" finished-at="2019-01-30T05:42:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initConfigs -->
-        <test-method status="PASS" signature="navigateToCustomAdapterPage()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1afd44cb]" name="navigateToCustomAdapterPage" duration-ms="3578" started-at="2019-01-22T23:01:46Z" finished-at="2019-01-22T23:01:49Z">
+        <test-method status="PASS" signature="navigateToCustomAdapterPage()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1ab3a8c8]" name="navigateToCustomAdapterPage" duration-ms="4359" started-at="2019-01-30T05:42:23Z" finished-at="2019-01-30T05:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToCustomAdapterPage -->
-        <test-method status="PASS" signature="retrieveDogNamesInformation()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1afd44cb]" name="retrieveDogNamesInformation" duration-ms="7851" started-at="2019-01-22T23:01:49Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo.navigateToCustomAdapterPage" finished-at="2019-01-22T23:01:57Z">
+        <test-method status="PASS" signature="retrieveDogNamesInformation()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1ab3a8c8]" name="retrieveDogNamesInformation" duration-ms="7641" started-at="2019-01-30T05:42:28Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo.navigateToCustomAdapterPage" finished-at="2019-01-30T05:42:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- retrieveDogNamesInformation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1afd44cb]" name="tearDown" is-config="true" duration-ms="2994" started-at="2019-01-22T23:01:57Z" finished-at="2019-01-22T23:02:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo@1ab3a8c8]" name="tearDown" is-config="true" duration-ms="2951" started-at="2019-01-30T05:42:35Z" finished-at="2019-01-30T05:42:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo -->
       <class name="MobileProgrammingLLC.Tests.APIDemos_MakingPopUps">
-        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@333291e3]" name="initConfigs" is-config="true" duration-ms="24629" started-at="2019-01-22T23:02:34Z" finished-at="2019-01-22T23:02:59Z">
+        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@40ef3420]" name="initConfigs" is-config="true" duration-ms="24089" started-at="2019-01-30T05:43:12Z" finished-at="2019-01-30T05:43:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initConfigs -->
-        <test-method status="PASS" signature="tapOnViewsOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@333291e3]" name="tapOnViewsOption" duration-ms="1260" started-at="2019-01-22T23:02:59Z" finished-at="2019-01-22T23:03:00Z">
+        <test-method status="PASS" signature="tapOnViewsOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@40ef3420]" name="tapOnViewsOption" duration-ms="1315" started-at="2019-01-30T05:43:36Z" finished-at="2019-01-30T05:43:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapOnViewsOption -->
-        <test-method status="PASS" signature="tapOnPopUpMenu()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@333291e3]" name="tapOnPopUpMenu" duration-ms="10287" started-at="2019-01-22T23:03:00Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_MakingPopUps.tapOnViewsOption" finished-at="2019-01-22T23:03:11Z">
+        <test-method status="PASS" signature="tapOnPopUpMenu()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@40ef3420]" name="tapOnPopUpMenu" duration-ms="10819" started-at="2019-01-30T05:43:38Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_MakingPopUps.tapOnViewsOption" finished-at="2019-01-30T05:43:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapOnPopUpMenu -->
-        <test-method status="PASS" signature="makeAPopUp()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@333291e3]" name="makeAPopUp" duration-ms="4265" started-at="2019-01-22T23:03:11Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_MakingPopUps.tapOnPopUpMenu" finished-at="2019-01-22T23:03:15Z">
+        <test-method status="PASS" signature="makeAPopUp()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@40ef3420]" name="makeAPopUp" duration-ms="4236" started-at="2019-01-30T05:43:49Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_MakingPopUps.tapOnPopUpMenu" finished-at="2019-01-30T05:43:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeAPopUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@333291e3]" name="tearDown" is-config="true" duration-ms="3389" started-at="2019-01-22T23:03:15Z" finished-at="2019-01-22T23:03:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_MakingPopUps@40ef3420]" name="tearDown" is-config="true" duration-ms="3243" started-at="2019-01-30T05:43:53Z" finished-at="2019-01-30T05:43:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- MobileProgrammingLLC.Tests.APIDemos_MakingPopUps -->
       <class name="MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots">
-        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@1ab3a8c8]" name="initConfigs" is-config="true" duration-ms="23917" started-at="2019-01-22T23:02:00Z" finished-at="2019-01-22T23:02:24Z">
+        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@333291e3]" name="initConfigs" is-config="true" duration-ms="23881" started-at="2019-01-30T05:42:38Z" finished-at="2019-01-30T05:43:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initConfigs -->
-        <test-method status="PASS" signature="tapOnViewsOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@1ab3a8c8]" name="tapOnViewsOption" duration-ms="1118" started-at="2019-01-22T23:02:24Z" finished-at="2019-01-22T23:02:25Z">
+        <test-method status="PASS" signature="tapOnViewsOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@333291e3]" name="tapOnViewsOption" duration-ms="904" started-at="2019-01-30T05:43:02Z" finished-at="2019-01-30T05:43:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapOnViewsOption -->
-        <test-method status="PASS" signature="tapOnDragAndDropOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@1ab3a8c8]" name="tapOnDragAndDropOption" duration-ms="3206" started-at="2019-01-22T23:02:25Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots.tapOnViewsOption" finished-at="2019-01-22T23:02:28Z">
+        <test-method status="PASS" signature="tapOnDragAndDropOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@333291e3]" name="tapOnDragAndDropOption" duration-ms="3326" started-at="2019-01-30T05:43:03Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots.tapOnViewsOption" finished-at="2019-01-30T05:43:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapOnDragAndDropOption -->
-        <test-method status="PASS" signature="validatingRedDotsMovement()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@1ab3a8c8]" name="validatingRedDotsMovement" duration-ms="3554" started-at="2019-01-22T23:02:28Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots.tapOnDragAndDropOption" finished-at="2019-01-22T23:02:32Z">
+        <test-method status="PASS" signature="validatingRedDotsMovement()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@333291e3]" name="validatingRedDotsMovement" duration-ms="3397" started-at="2019-01-30T05:43:06Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots.tapOnDragAndDropOption" finished-at="2019-01-30T05:43:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingRedDotsMovement -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@1ab3a8c8]" name="tearDown" is-config="true" duration-ms="2614" started-at="2019-01-22T23:02:32Z" finished-at="2019-01-22T23:02:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots@333291e3]" name="tearDown" is-config="true" duration-ms="2659" started-at="2019-01-30T05:43:10Z" finished-at="2019-01-30T05:43:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- MobileProgrammingLLC.Tests.APIDemos_PlayingRedDots -->
       <class name="MobileProgrammingLLC.Tests.APIDemos_SettingWiFi">
-        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@72057ecf]" name="initConfigs" is-config="true" duration-ms="27986" started-at="2019-01-22T23:00:24Z" finished-at="2019-01-22T23:00:52Z">
+        <test-method status="PASS" signature="initConfigs()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@6973b51b]" name="initConfigs" is-config="true" duration-ms="26120" started-at="2019-01-30T05:41:04Z" finished-at="2019-01-30T05:41:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initConfigs -->
-        <test-method status="PASS" signature="clickOnPreferenceOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@72057ecf]" name="clickOnPreferenceOption" duration-ms="836" started-at="2019-01-22T23:00:52Z" finished-at="2019-01-22T23:00:53Z">
+        <test-method status="PASS" signature="clickOnPreferenceOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@6973b51b]" name="clickOnPreferenceOption" duration-ms="888" started-at="2019-01-30T05:41:30Z" finished-at="2019-01-30T05:41:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnPreferenceOption -->
-        <test-method status="PASS" signature="clickOnPreferenceDependenciesOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@72057ecf]" name="clickOnPreferenceDependenciesOption" duration-ms="2505" started-at="2019-01-22T23:00:53Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_SettingWiFi.clickOnPreferenceOption" finished-at="2019-01-22T23:00:55Z">
+        <test-method status="PASS" signature="clickOnPreferenceDependenciesOption()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@6973b51b]" name="clickOnPreferenceDependenciesOption" duration-ms="2823" started-at="2019-01-30T05:41:31Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_SettingWiFi.clickOnPreferenceOption" finished-at="2019-01-30T05:41:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnPreferenceDependenciesOption -->
-        <test-method status="PASS" signature="settingWifiFunctionality()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@72057ecf]" name="settingWifiFunctionality" duration-ms="21946" started-at="2019-01-22T23:00:55Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_SettingWiFi.clickOnPreferenceDependenciesOption" finished-at="2019-01-22T23:01:17Z">
+        <test-method status="PASS" signature="settingWifiFunctionality()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@6973b51b]" name="settingWifiFunctionality" duration-ms="21146" started-at="2019-01-30T05:41:34Z" depends-on-methods="MobileProgrammingLLC.Tests.APIDemos_SettingWiFi.clickOnPreferenceDependenciesOption" finished-at="2019-01-30T05:41:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingWifiFunctionality -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@72057ecf]" name="tearDown" is-config="true" duration-ms="3620" started-at="2019-01-22T23:01:17Z" finished-at="2019-01-22T23:01:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MobileProgrammingLLC.Tests.APIDemos_SettingWiFi@6973b51b]" name="tearDown" is-config="true" duration-ms="3630" started-at="2019-01-30T05:41:55Z" finished-at="2019-01-30T05:41:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

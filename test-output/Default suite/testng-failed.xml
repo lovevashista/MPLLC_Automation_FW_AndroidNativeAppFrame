@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo">
+      <class name="MobileProgrammingLLC.Tests.APIDemos_SettingWiFi">
         <methods>
-          <include name="tapOnViewsOption"/>
-          <include name="tapOnExpandableListOption"/>
-          <include name="tearDown"/>
-          <include name="tapOnCustomAdapterOption"/>
+          <include name="clickOnPreferenceOption"/>
           <include name="initConfigs"/>
+          <include name="clickOnPreferenceDependenciesOption"/>
+          <include name="settingWifiFunctionality"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- MobileProgrammingLLC.Tests.APIDemos_RetrivingDogsInfo -->
+      </class> <!-- MobileProgrammingLLC.Tests.APIDemos_SettingWiFi -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

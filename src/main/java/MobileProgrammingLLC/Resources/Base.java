@@ -27,7 +27,6 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.AndroidTouchAction;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -140,8 +139,10 @@ public class Base {
 		try {
 			Date d = new Date();
 			File f = new File("screens");
-			File src = new File(f,testCase+"_"+d.toString()+"_"+"ss.png");
+			String fileName = testCase+"_"+d.toString()+"_"+"ss.png";
+			File src = new File(f,fileName);
 			FileUtils.copyFile(s, src);
+			log.info("Screenshot taken! NAME: " + fileName);
 		} catch (IOException e) {
 			log.error("Capturing Screenshot failed.");
 		}
@@ -214,7 +215,8 @@ public class Base {
 			WebDriverWait w = new WebDriverWait(driver, 20);
 			w.until(ExpectedConditions.presenceOfElementLocated(ele));
 		}catch(Exception e) {
-			log.error("Element having locator '"+ele+"'"+" could not be located.");
+			log.error("Element having locator '"+ele+"'"+" could not be located. Taking Screenshot...");
+			captureScreen(ele.toString().replace("Proxy element for: DefaultElementLocator ", "Locator_"),driver);
 		}
 	}
 	
@@ -243,10 +245,11 @@ public class Base {
 			t = new AndroidTouchAction(driver);
 			tele = TapOptions.tapOptions().withElement(ElementOption.element(element));
 			t.tap(tele).perform();
+			log.info("Successfully tapped on '" + element + "'");
 		}catch(Exception e) {
-			log.error("Tapping on the element failed.");
+			log.error("Tapping on the element failed. Taking Screenshot...");
+			captureScreen(element.toString().replace("Proxy element for: DefaultElementLocator ", "Locator_"),driver);
 		}
-		log.info("Successfully tapped on '" + element + "'");
 	}
 	
 	public void longPressOn(AndroidElement element, AndroidDriver<AndroidElement> driver) {
@@ -255,10 +258,11 @@ public class Base {
 			t = new AndroidTouchAction(driver);
 			lpele = LongPressOptions.longPressOptions().withElement(ElementOption.element(element));
 			t.longPress(lpele).perform();
+			log.info("Successfully long pressed on '"+ element + "'.");
 		}catch(Exception e) {
-			log.error("Long Pressing the element failed.");
+			log.error("Long Pressing the element failed. Taking Screenshot...");
+			captureScreen(element.toString().replace("Proxy element for: DefaultElementLocator ", "Locator_"),driver);
 		}
-		log.info("Successfully long pressed on '"+ element + "'.");
 	}
 	
 	public void moveTo(AndroidElement element, AndroidDriver<AndroidElement> driver, int xOffset, int yOffset) {
@@ -268,20 +272,22 @@ public class Base {
 			int y = element.getLocation().getY() + yOffset;
 			ptOp = PointOption.point(x, y);
 			t.moveTo(ptOp).release().perform();
+			log.info("Successfully moved the element to '"+ element + "'.");
 		}catch(Exception e) {
-			log.error("Moving to the element failed.");
+			log.error("Moving to the element failed. Taking Screenshot...");
+			captureScreen(element.toString().replace("Proxy element for: DefaultElementLocator ", "Locator_"),driver);
 		}
-		log.info("Successfully moved the element to '"+ element + "'.");
 	}
 	
 	public void scrollTo(String uiAutomator, AndroidDriver<AndroidElement> driver) {
 		log.debug("Attempting to perform scroll on the page...");
 		try {
 			driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView("+uiAutomator+")"));
+			log.info("Scrolling successful.");
 		}catch(Exception e) {
-			log.error("Page scrolling failed.");
+			log.error("Page scrolling failed. Taking Screenshot...");
+			captureScreen(this.getClass().toString(),driver);
 		}
-		log.info("Scrolling successful.");
 	}
 	
 	public void getCurrentAppActivity(AndroidDriver<AndroidElement> driver) {
@@ -315,50 +321,52 @@ public class Base {
 		log.debug("Hiding Device Keypad...");
 		try {
 			driver.hideKeyboard();
+			log.info("Keypad hidden successfully.");
 		}catch(Exception e) {
 			log.error("Hiding Keyboard unsuccessful.");
 		}
-		log.info("Keypad hidden successfully.");
 	}
 	
 	public void navigateBackOnDevice(AndroidDriver<AndroidElement> driver) {
 		log.debug("Navigating on the previous activity...");
 		try {
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			log.info("Back Key pressed successfully.");
 		}catch(Exception e) {
 			log.error("Navigating back unsuccessful!");
 		}
-		log.info("Back Key pressed successfully.");
 	}
 	
 	public void navigateOnHomeScreen(AndroidDriver<AndroidElement> driver) {
 		log.debug("Navigating on the home screen...");
 		try {
 			driver.pressKey(new KeyEvent(AndroidKey.HOME));
+			log.info("Home Key pressed successfully.");
 		}catch(Exception e) {
 			log.error("Navigation on home screen unsuccessful!");
 		}
-		log.info("Home Key pressed successfully.");
 	}
 	
 	public void compareContent(AndroidElement ele, String expected) {
 		try {
 			log.debug("Attempting to compare content returned by \"" + ele + "\" from \"" + expected + "\" ...");
 			Assert.assertEquals(ele.getText(), expected);
+			log.info("Comparison Successful!");
 		}catch(Exception e) {
-			log.error("Comparison Failed! Expected was '"+expected+"' but actual is '"+ele.getText()+"'");
+			log.error("Comparison Failed! Expected was '"+expected+"' but actual is '"+ele.getText()+"'. Taking Screenshot...");
+			captureScreen(ele.toString().replace("Proxy element for: DefaultElementLocator ", "Locator_"),driver);
 		}
-		log.info("Comparison Successful!");
 	}
 	
 	public void enterContentInto(AndroidElement ele, String content) {
 		try {
 			log.debug("Attempting to send \""+ content + "\" to element \"" + ele + "\"...");
 			ele.sendKeys(content);
+			log.info("Content \"" + content + "\" entered successfully into element \"" + ele + "\"");
 		}catch(Exception e) {
-			log.error("Entering content into element '"+ele+"' failed.");
+			log.error("Entering content into element '"+ele+"' failed. Taking Screenshot...");
+			captureScreen(ele.toString().replace("Proxy element for: DefaultElementLocator ", "Locator_"),driver);
 		}
-		log.info("Content \"" + content + "\" entered successfully into element \"" + ele + "\"");
 	}
 	
 	public void isDisplayedOnPage(AndroidElement ele) {
@@ -368,7 +376,8 @@ public class Base {
 				log.info(ele + " is displayed on the page successfully.");
 			}
 		}catch(Exception e){
-			log.error("Presence of " + ele + " on the page failed.");
+			log.error("Presence of " + ele + " on the page failed. Taking Screenshot...");
+			captureScreen(ele.toString().replace("Proxy element for: DefaultElementLocator ", "Locator_"),driver);
 		}
 	}
 }
